@@ -1,0 +1,162 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color: #fff;
+  padding: 15px 30px;
+}
+
+header .logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+}
+
+header ul li {
+  margin-left: 20px;
+}
+
+header ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+header ul li a:hover {
+  color: #d75d48;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: #e0f7fa;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero img {
+  margin-top: 20px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Headquarter */
+.headquarter {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.headquarter h2 {
+  margin-bottom: 20px;
+}
+
+.cities {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.city img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Message Form */
+.message {
+  padding: 40px 20px;
+  background: #fafafa;
+}
+
+.message h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+form {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin: 8px 0 4px;
+}
+
+form input,
+form textarea {
+  padding: 8px;
+  border: 1px solid #cd2626;
+  border-radius: 5px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+form button {
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  background: #a02727;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #0097a7;
+}
+
+/* Output box */
+.output {
+  flex: 1;
+  min-width: 280px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #111;
+  color: #fff;
+  margin-top: 30px;
+}

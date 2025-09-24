@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas | RevoU</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="logo">UNTAR</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#profile">Our Profile</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#message">Message Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Welcome to My University Tarumanagara</h1>
+    <p>
+    Universitas Tarumanagara (UNTAR) adalah salah satu universitas swasta tertua di Indonesia 
+    yang terus berinovasi<br> untuk mencetak generasi unggul, kreatif, dan siap bersaing di era global.
+    </p>
+    <img src="img/bg.png" alt="Mobil Futuristik">
+  </section>
+
+  <!-- Our Headquarter -->
+  <section id="profile" class="headquarter">
+    <h2>Our Headquarter</h2>
+    <div class="cities">
+      <div class="city">
+        <img src="https://via.placeholder.com/120" alt="Jakarta">
+        <p>Jakarta</p>
+      </div>
+      <div class="city">
+        <img src="https://via.placeholder.com/120" alt="Bandung">
+        <p>Bandung</p>
+      </div>
+      <div class="city">
+        <img src="https://via.placeholder.com/120" alt="Surabaya">
+        <p>Surabaya</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Message Us -->
+  <section id="message" class="message">
+    <h2>Message Us</h2>
+    <div class="form-container">
+      <form id="contactForm">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" required>
+
+        <label for="dob">Tanggal Lahir:</label>
+        <input type="date" id="dob" required>
+
+        <label>Jenis Kelamin:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="gender" value="Laki-laki" required> Laki-laki</label>
+          <label><input type="radio" name="gender" value="Perempuan" required> Perempuan</label>
+        </div>
+
+        <label for="messageText">Pesan:</label>
+        <textarea id="messageText" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <div class="output" id="outputBox">
+        <p><strong>Current Time:</strong> <span id="time"></span></p>
+        <p><strong>Nama:</strong> <span id="outName"></span></p>
+        <p><strong>Tanggal Lahir:</strong> <span id="outDob"></span></p>
+        <p><strong>Jenis Kelamin:</strong> <span id="outGender"></span></p>
+        <p><strong>Pesan:</strong> <span id="outMessage"></span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Created by Luvi ✨</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
