@@ -1,162 +1,167 @@
-/* Reset */
-* {
+body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background: #f4f4f4;
+  color: #333;
 }
 
-body {
-  font-family: 'Poppins', sans-serif;
-  background: #f8f9fa;
-  color: #333;
-  line-height: 1.6;
+/* Welcome Screen */
+.welcome {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(135deg, #2b1055, #7597de);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s ease;
+  z-index: 999;
+}
+
+.welcome-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.welcome input {
+  padding: 8px;
+  margin-top: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.welcome button {
+  margin-top: 12px;
+  padding: 8px 16px;
+  border: none;
+  background: #551010;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 /* Navbar */
-header {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #111;
-  color: #fff;
-  padding: 15px 30px;
+  background: #551010;
+  padding: 10px 20px;
 }
 
-header .logo {
-  font-size: 1.3rem;
-  font-weight: bold;
+.logo {
+  font-weight: 600;
+  color: white;
 }
 
-header ul {
+.nav-links {
   list-style: none;
   display: flex;
+  gap: 20px;
 }
 
-header ul li {
-  margin-left: 20px;
-}
-
-header ul li a {
-  color: #fff;
+.nav-links a {
   text-decoration: none;
-  transition: color 0.3s;
+  color: white;
+  font-weight: 500;
 }
 
-header ul li a:hover {
-  color: #d75d48;
+.nav-links a:hover {
+  color: #ffd700;
 }
 
 /* Hero */
 .hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('/img/bg.png') no-repeat center/cover;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
   text-align: center;
-  padding: 50px 20px;
-  background: #e0f7fa;
 }
 
 .hero h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.hero img {
-  margin-top: 20px;
-  max-width: 100%;
-  border-radius: 10px;
+  font-size: 2em;
 }
 
 /* Headquarter */
-.headquarter {
-  padding: 40px 20px;
+.hq {
+  padding: 40px;
   text-align: center;
 }
 
-.headquarter h2 {
-  margin-bottom: 20px;
-}
-
-.cities {
+.hq-container {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 20px;
 }
 
-.city img {
-  border-radius: 50%;
-  margin-bottom: 10px;
+.hq-item {
+  background: #de7575;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  flex: 1;
 }
 
-/* Message Form */
-.message {
-  padding: 40px 20px;
-  background: #fafafa;
-}
-
-.message h2 {
-  margin-bottom: 20px;
-  text-align: center;
+/* Contact */
+.contact {
+  padding: 40px;
 }
 
 .form-container {
   display: flex;
-  gap: 40px;
-  justify-content: center;
-  flex-wrap: wrap;
+  gap: 20px;
 }
 
 form {
   flex: 1;
-  min-width: 280px;
   display: flex;
   flex-direction: column;
 }
 
-form label {
-  margin: 8px 0 4px;
-}
-
-form input,
-form textarea {
-  padding: 8px;
-  border: 1px solid #cd2626;
-  border-radius: 5px;
-}
-
-.radio-group {
-  display: flex;
-  gap: 15px;
+form input, form textarea {
   margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
 }
 
 form button {
-  margin-top: 15px;
   padding: 10px;
   border: none;
-  background: #a02727;
-  color: #fff;
-  border-radius: 5px;
+  background: #551010;
+  color: white;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s;
 }
 
-form button:hover {
-  background: #0097a7;
-}
-
-/* Output box */
-.output {
+.output-box {
   flex: 1;
-  min-width: 280px;
-  border: 1px solid #ddd;
-  padding: 15px;
-  border-radius: 5px;
-  background: #fff;
+  background: #eee;
+  padding: 20px;
+  border-radius: 12px;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  padding: 15px;
-  background: #111;
-  color: #fff;
-  margin-top: 30px;
+  background: #551010;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Animations */
+.hidden {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.hidden.show {
+  opacity: 1;
 }
