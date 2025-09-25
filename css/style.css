@@ -9,7 +9,7 @@ body {
 .welcome {
   position: fixed;
   inset: 0;
-  background: linear-gradient(135deg, #2b1055, #7597de);
+  background: linear-gradient(135deg, #551010, #de7575);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,6 +102,7 @@ body {
 }
 
 .hq-item {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   background: #de7575;
   color: white;
   padding: 20px;
