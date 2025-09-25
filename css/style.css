@@ -1,168 +1,106 @@
+/* Global Style */
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: #f4f4f4;
-  color: #333;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #eee;
 }
 
-/* Welcome Screen */
-.welcome {
-  position: fixed;
-  inset: 0;
-  background: linear-gradient(135deg, #551010, #de7575);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: opacity 1s ease;
-  z-index: 999;
-}
-
-.welcome-box {
-  background: #fff;
-  padding: 30px;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-.welcome input {
-  padding: 8px;
-  margin-top: 10px;
-  width: 200px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-}
-
-.welcome button {
-  margin-top: 12px;
-  padding: 8px 16px;
-  border: none;
-  background: #551010;
-  color: white;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-/* Navbar */
-.navbar {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #551010;
-  padding: 10px 20px;
+  padding: 15px 40px;
+  background: #000;
+  position: sticky;
+  top: 0;
 }
 
-.logo {
-  font-weight: 600;
-  color: white;
+header .logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #d00000;
 }
 
-.nav-links {
-  list-style: none;
+nav ul {
   display: flex;
+  list-style: none;
   gap: 20px;
 }
 
-.nav-links a {
+nav a {
   text-decoration: none;
-  color: white;
-  font-weight: 500;
+  color: #fff;
 }
 
-.nav-links a:hover {
-  color: #ffd700;
+.btn {
+  background: #d00000;
+  color: #fff;
+  padding: 8px 15px;
+  text-decoration: none;
+  border-radius: 4px;
 }
 
-/* Hero */
+/* Hero Section */
 .hero {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url('/img/bg.png') no-repeat center/cover;
-  color: white;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
   text-align: center;
+  padding: 100px 20px;
+  background: url('hero-campus.jpg') no-repeat center center/cover;
+  color: #fff;
 }
 
 .hero h1 {
-  font-size: 2em;
+  font-size: 40px;
+  margin-bottom: 10px;
 }
 
-/* Headquarter */
-.hq {
-  padding: 40px;
+/* Content Section */
+.content {
+  padding: 50px 20px;
   text-align: center;
 }
 
-.hq-container {
+.profile-cards {
   display: flex;
   justify-content: center;
   gap: 20px;
+  margin-top: 20px;
 }
 
-.hq-item {
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  background: #de7575;
-  color: white;
+.card {
+  background: #222;
   padding: 20px;
-  border-radius: 12px;
-  flex: 1;
+  border-radius: 8px;
+  width: 200px;
 }
 
-/* Contact */
-.contact {
-  padding: 40px;
-}
-
-.form-container {
-  display: flex;
-  gap: 20px;
-}
-
+/* Form */
 form {
-  flex: 1;
   display: flex;
   flex-direction: column;
+  gap: 15px;
+  width: 300px;
+  margin: auto;
 }
 
 form input, form textarea {
-  margin-bottom: 10px;
-  padding: 8px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
 }
 
 form button {
+  background: #d00000;
+  color: #fff;
   padding: 10px;
   border: none;
-  background: #551010;
-  color: white;
-  border-radius: 8px;
   cursor: pointer;
-}
-
-.output-box {
-  flex: 1;
-  background: #eee;
-  padding: 20px;
-  border-radius: 12px;
+  border-radius: 5px;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  background: #551010;
-  color: white;
-  padding: 10px;
-  margin-top: 20px;
-}
-
-/* Animations */
-.hidden {
-  opacity: 0;
-  transition: opacity 1s ease;
-}
-.hidden.show {
-  opacity: 1;
+  padding: 20px;
+  background: #000;
 }

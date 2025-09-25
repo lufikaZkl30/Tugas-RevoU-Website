@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Welcome Screen */
+.welcome {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(135deg, #551010, #de7575);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s ease;
+  z-index: 999;
+}
+
+.welcome-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.welcome input {
+  padding: 8px;
+  margin-top: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.welcome button {
+  margin-top: 12px;
+  padding: 8px 16px;
+  border: none;
+  background: #551010;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #551010;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-weight: 600;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #ffd700;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('/img/bg.png') no-repeat center/cover;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2em;
+}
+
+/* Headquarter */
+.hq {
+  padding: 40px;
+  text-align: center;
+}
+
+.hq-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hq-item {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  background: #de7575;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  flex: 1;
+}
+
+/* Contact */
+.contact {
+  padding: 40px;
+}
+
+.form-container {
+  display: flex;
+  gap: 20px;
+}
+
+form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  padding: 10px;
+  border: none;
+  background: #551010;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.output-box {
+  flex: 1;
+  background: #eee;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #551010;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Animations */
+.hidden {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.hidden.show {
+  opacity: 1;
+}
