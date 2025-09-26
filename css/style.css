@@ -100,7 +100,7 @@ body {
 .about h2::after,
 .profile h2::after,
 .portfolio h2::after {
-  background: var(--gold);
+  background: var(darker, #111);
 }
 
 .about {
@@ -247,7 +247,7 @@ body {
   display: block;
   width: 60px;
   height: 4px;
-  background: #c1121f;
+  background: black;
   margin: 10px auto;
   border-radius: 2px;
 }
