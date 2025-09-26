@@ -347,11 +347,3 @@ footer {
   margin-top: 20px;
 }
 
-/* Animations */
-.hidden {
-  opacity: 0;
-  transition: opacity 1s ease;
-}
-.hidden.show {
-  opacity: 1;
-}
