@@ -1,92 +1,159 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Universitas Tarumanagara</title>
+  <title>My Website | UNTAR</title>
   <link rel="stylesheet" href="css/style.css">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Script -->
+  <script src="js/script.js" defer></script>
 </head>
 <body>
-  <!-- Navbar -->
-  <header>
-    <div class="logo">UNTAR</div>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#vision">Vision & Mission</a></li>
-        <li><a href="#profile">Our Profile</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <a href="#message" class="btn">Message Us</a>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Welcome to Universitas Tarumanagara</h1>
-    <p>Kampus Inovasi & Prestasi untuk Masa Depan</p>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="content">
-    <h2>About UNTAR</h2>
-    <p>
-      Universitas Tarumanagara (UNTAR) adalah salah satu universitas swasta tertua dan terkemuka di Indonesia,
-      berkomitmen untuk mencetak generasi unggul yang berkarakter dan inovatif.
-    </p>
-  </section>
-
-  <!-- Vision & Mission -->
-  <section id="vision" class="content">
-    <h2>Vision & Mission</h2>
-    <h3>Vision</h3>
-    <p>Menjadi universitas unggul yang berperan aktif dalam pembangunan bangsa.</p>
-    <h3>Mission</h3>
-    <ul>
-      <li>Menyelenggarakan pendidikan berkualitas.</li>
-      <li>Menghasilkan penelitian yang bermanfaat.</li>
-      <li>Memberikan kontribusi nyata kepada masyarakat.</li>
-    </ul>
-  </section>
-
-  <!-- Our Profile -->
-  <section id="profile" class="content">
-    <h2>Our Profile</h2>
-    <p>UNTAR memiliki berbagai fakultas dan program studi yang mendukung perkembangan mahasiswa.</p>
-    <div class="profile-cards">
-      <div class="card">Fakultas Ekonomi</div>
-      <div class="card">Fakultas Teknik</div>
-      <div class="card">Fakultas Kedokteran</div>
-      <div class="card">Fakultas Ilmu Komunikasi</div>
+  <!-- Welcome Screen -->
+  <div id="welcomeScreen" class="welcome">
+    <div class="welcome-box">
+      <h2>Welcome!</h2>
+      <p>Masukkan nama kamu dulu:</p>
+      <input type="text" id="usernameInput" placeholder="Nama kamu">
+      <button id="enterBtn">Masuk</button>
     </div>
-  </section>
+  </div>
 
-  <!-- Contact -->
-  <section id="contact" class="content">
-    <h2>Headquarter</h2>
-    <p>Jl. Letjen S. Parman No. 1, Jakarta Barat 11440</p>
-    <p>Telp: (021) 5672548</p>
-    <p>Email: info@untar.ac.id</p>
-  </section>
+  <!-- Main Content -->
+  <div id="mainContent" class="hidden">
 
-  <!-- Message Us -->
-  <section id="message" class="content">
-    <h2>Message Us</h2>
-    <form id="messageForm">
-      <input type="text" id="name" placeholder="Nama" required>
-      <input type="email" id="email" placeholder="Email" required>
-      <input type="tel" id="phone" placeholder="Nomor HP" required>
-      <textarea id="msg" placeholder="Pesan" required></textarea>
-      <button type="submit">Kirim</button>
-    </form>
-    <div id="result"></div>
-  </section>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">UNTAR</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#profile">Our Profile</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Message Us</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Universitas Tarumanagara</p>
-  </footer>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <h1>Hi <span id="username">User</span>, Welcome To Universitas Tarumanagara</h1>
+        <p>Tempat Belajar, Berkarya, dan Meraih Mimpi</p>
+      </div>
+    </section>
 
-  <script src="js/script.js"></script>
+    <!-- About Us -->
+    <section id="about" class="about">
+      <div class="about-container">
+        <div class="about-text">
+          <h2>About Us</h2>
+          <p>
+            Universitas Tarumanagara (UNTAR) adalah salah satu universitas swasta tertua di Indonesia
+            yang berkomitmen untuk mencetak generasi unggul dengan semangat 
+            <b>Integrity, Professionalism, and Entrepreneurship</b>.
+          </p>
+          <div class="about-values">
+            <div class="value-box">Pendidikan Berkualitas</div>
+            <div class="value-box">Jaringan Global</div>
+            <div class="value-box">Inovasi & Kreativitas</div>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="https://asset.kompas.com/crops/iT5FaAMKTasxjQoqnjazRWRTt1c=/15x70:1020x740/1200x800/data/photo/2024/07/11/668f69538bf18.jpeg" alt="UNTAR Illustration">
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR PROFILE -->
+    <section id="profile" class="profile">
+      <h2>Our Profile</h2>
+      <p class="profile-sub">Kenali lebih dekat Universitas Tarumanagara</p>
+      
+      <div class="profile-container">
+        <div class="profile-card">
+          <h3>🎯 Visi</h3>
+          <p>Menjadi universitas unggul berlandaskan integritas, profesionalisme, dan kewirausahaan.</p>
+        </div>
+        <div class="profile-card">
+          <h3>📚 Misi</h3>
+          <p>Menyelenggarakan pendidikan, penelitian, dan pengabdian masyarakat yang berkualitas.</p>
+        </div>
+        <div class="profile-card">
+          <h3>🏛️ Fakultas</h3>
+          <p>UNTAR memiliki 8 fakultas dengan berbagai program studi unggulan.</p>
+        </div>
+        <div class="profile-card">
+          <h3>👩‍🎓 Mahasiswa</h3>
+          <p>Ribuan mahasiswa dari seluruh Indonesia bergabung setiap tahunnya.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+      <h2>Our Portfolio</h2>
+      <p class="portfolio-sub">Beberapa karya & aktivitas mahasiswa UNTAR</p>
+
+      <div class="portfolio-container">
+        <div class="portfolio-card">
+          <img src="images/project1.jpg" alt="Project 1">
+          <h3>Inovasi Teknologi</h3>
+          <p>Aplikasi karya mahasiswa Teknik Informatika UNTAR.</p>
+        </div>
+        <div class="portfolio-card">
+          <img src="images/project2.jpg" alt="Project 2">
+          <h3>Desain Arsitektur</h3>
+          <p>Konsep gedung modern dari Fakultas Arsitektur.</p>
+        </div>
+        <div class="portfolio-card">
+          <img src="images/project3.jpg" alt="Project 3">
+          <h3>Event Kampus</h3>
+          <p>Dokumentasi kegiatan seni & budaya mahasiswa.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Message Us -->
+    <section id="contact" class="contact">
+      <h2>Message Us</h2>
+      <div class="form-container">
+        <form id="messageForm">
+          <label>Nama :</label>
+          <input type="text" id="name" required>
+
+          <label>Tanggal Lahir :</label>
+          <input type="date" id="dob" required>
+
+          <label>Jenis Kelamin :</label>
+          <div class="radio-group">
+            <input type="radio" name="gender" value="Laki-Laki" required> Laki-Laki
+            <input type="radio" name="gender" value="Perempuan" required> Perempuan
+          </div>
+
+          <label>Pesan :</label>
+          <textarea id="message" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+
+        <div id="output" class="output-box">
+          <p><b>Current Time:</b> <span id="currentTime"></span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>🔥Created by | Lufika Ayu Fatimah🔥</p>
+    </footer>
+
+  </div>
 </body>
 </html>
