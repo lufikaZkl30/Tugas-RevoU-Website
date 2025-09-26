@@ -1,3 +1,4 @@
+/* Warna yang digunakan dalam web */
 :root {
   --red-main: #8B0000;   /* merah elegan */
   --red-soft: #B22222;   /* merah wine */
@@ -96,7 +97,6 @@ body {
 }
 
 /* About Us Section */
-
 .about h2::after,
 .profile h2::after,
 .portfolio h2::after {
@@ -124,7 +124,6 @@ body {
   background: #111; /* garis elegan hitam */
   margin-top: 8px;
   border-radius: 2px;
-}
 }
 
 .about-container {
