@@ -16,4 +16,4 @@ Company Profile Website UNTAR adalah sebuah website sederhana yang dibuat untuk 
 - JavaScript
 
 **Demo:**
-https://tugas-revou-website-lufika.netlify.app/
+https://lufikazkl30.github.io/Tugas-RevoU-Website/
