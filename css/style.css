@@ -105,7 +105,7 @@ body {
 .about h2::after,
 .profile h2::after,
 .portfolio h2::after {
-  background: var(darker, #111);
+  background: var(--black-main, #111);
 }
 
 .about {
@@ -347,7 +347,7 @@ form button, .welcome button {
 footer {
   text-align: center;
   background: var(--black-main);
-  border-top: 2px solid var(--gold);  color: white;
+  border-top: 2px solid; color: white;
   padding: 10px;
   margin-top: 20px;
 }
