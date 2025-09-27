@@ -1,9 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* Warna yang digunakan dalam web */
 :root {
   --red-main: #8B0000;   /* merah elegan */
   --red-soft: #B22222;   /* merah wine */
   --black-main: #1c1c1c; /* hitam charcoal */
   --gold: #d4af37;       /* aksen emas */
+}
 
 body {
   margin: 0;
@@ -346,4 +351,3 @@ footer {
   padding: 10px;
   margin-top: 20px;
 }
-
