@@ -15,5 +15,3 @@ Company Profile Website UNTAR adalah sebuah website sederhana yang dibuat untuk 
 - CSS (Flexbox, Grid, Animation)
 - JavaScript
 
-**Demo:**
-https://lufikazkl30.github.io/Tugas-RevoU-Website/
